@@ -23,17 +23,6 @@ const details = () => {
         })
     }, [])
 
-   const handleScroll = (idx) => {
-const scrollVal = window.innerHeight/4
-    gsap.to(window, {
-        scrollTo: {
-            y: idx*scrollVal,  
-        },
-        duration: 1,
-    });
-};
-
-    
     
 
     return (
@@ -55,16 +44,16 @@ const scrollVal = window.innerHeight/4
                     </div>
                 </div>
                 <div className='h-screen w-[5vw] absolute top-0 right-[-2.5vw] flex flex-col items-center justify-center gap-8'>
-                    <div onClick={()=>handleScroll(0)} className='w-[5vw] h-[5vw] bg-white p-1 flex cursor-pointer items-center justify-center'>
+                    <div  className='w-[5vw] h-[5vw] bg-white p-1 flex cursor-pointer items-center justify-center'>
                         <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1686831889330-dd7d9ff32515?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                     </div>
-                    <div onClick={()=>handleScroll(1)} className='w-[5vw] h-[5vw] bg-white p-1 flex cursor-pointer items-center justify-center'>
+                    <div  className='w-[5vw] h-[5vw] bg-white p-1 flex cursor-pointer items-center justify-center'>
                         <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1686831889299-f4c2a9c561c9?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                     </div>
-                    <div onClick={()=>handleScroll(2)} className='w-[5vw] h-[5vw] bg-white p-1 flex cursor-pointer items-center justify-center'>
+                    <div  className='w-[5vw] h-[5vw] bg-white p-1 flex cursor-pointer items-center justify-center'>
                         <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1686831757659-a7528ec36e24?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                     </div>
-                    <div onClick={()=>handleScroll(3)} className='w-[5vw] h-[5vw] bg-white p-1 flex cursor-pointer items-center justify-center'>
+                    <div  className='w-[5vw] h-[5vw] bg-white p-1 flex cursor-pointer items-center justify-center'>
                         <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1686831757685-de3cadfc2325?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                     </div>
                 </div>
