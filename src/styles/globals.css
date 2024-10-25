@@ -4,16 +4,16 @@
 
 @font-face {
   font-family: first;
-  src: url('/fonts/ABCDiatype.woff2');
+  src: url('/fonts/Faro-BoldLucky.woff2');
 }
 @font-face {
   font-family: second;
-  src: url('/fonts/GTSuperDisplay-Light.woff2');
+  src: url('/fonts/Faro-RegularLucky\ \(1\).woff2');
 }
 
 @font-face {
   font-family: third;
-  src: url('/fonts/poppins_latin_regular_400_2.woff2');
+  src: url('/fonts/ClearfaceStd-Regular.woff2');
 }
 
 
@@ -28,20 +28,26 @@ body {
   height: 100%;
 }
 
-.marque{
-  overflow: hidden;
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
-.marque h1{
+
+.socal-mq{
   animation-name: slide;
-  animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-duration: 15s;
 }
+
 @keyframes slide {
-  0% {
-    transform: translateX(0);
+  0%{
+    transform: translateX(0%);
   }
-  100% {
+  100%{
     transform: translateX(-100%);
   }
+
+  
 }

@@ -6,7 +6,7 @@ const products = ({ data, children }) => {
 
   return (
     <div className="w-full min-h-screen">
-      <div className='flex bg-[#f8d8de]'>
+      <div className='flex justify-end bg-[#FDF9EE]'>
         <ProductSideNav />
         {children}
       </div>

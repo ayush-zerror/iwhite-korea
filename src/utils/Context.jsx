@@ -1,5 +1,7 @@
-import React, { Children, createContext } from 'react'
+import React, {createContext} from 'react'
 export const productsContext = createContext()
+
+
 
 const Context = ({ children }) => {
   const products = [
@@ -130,6 +132,7 @@ const Context = ({ children }) => {
       ]
     }
   ]
+
   return (
     <productsContext.Provider value={products}>{children}</productsContext.Provider>
   )

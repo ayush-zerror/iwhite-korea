@@ -1,13 +1,12 @@
 import React from 'react'
 import Products from '@/components/products/Products'
 import Navbar from '@/components/navbar/Navbar'
-import ProductsContainer from '@/components/products/ProductsContainer'
 
 const index = () => {
 
   return (
     <div className='relative'>
-      <Navbar />
+      <Navbar color={"black"} bg={"bg-[#FDF9EE]"}/>
       <Products>
       </Products>
     </div>

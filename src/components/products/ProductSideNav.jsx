@@ -16,14 +16,14 @@ const ProductSideNav = () => {
       ]
     
   return (
-    <idv className='w-[25%] h-screen pl-11 pt-52 '>
+    <div className='w-[25%] fixed top-0 left-0 h-screen pl-11 pt-52 '>
     {productsList.map((p,i)=>(
       <div key={i} className='relative mb-4'>
-      <i className={`ri-arrow-right-line ${router.query.name == p && 'text-zinc-800'} text-[#F2809A]`}></i>
-      <Link href={`/products/${p}`} className={`absolute top-0 left-0 bg-[#f8d8de] hover:left-5 ${router.query.name == p && 'left-5 text-zinc-800'} duration-500 font-semibold text-[#fa6285] font-["second"] capitalize  text-2xl cursor-pointer w-fit`}>{p}</Link>
+      <i className={`ri-arrow-right-line ${router.query.name == p && 'text-zinc-900'} text-zinc-500`}></i>
+      <Link href={`/products/${p}`} className={`absolute top-1/2 -translate-y-1/2 left-0 bg-[#FDF9EE] hover:left-5 ${router.query.name == p && 'left-5 text-zinc-900'} duration-500 text-zinc-500 font-[second] capitalize  text-2xl cursor-pointer w-fit`}>{p}</Link>
       </div>
     ))}
-   </idv>
+   </div>
   )
 }
 

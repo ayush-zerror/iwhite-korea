@@ -16,7 +16,7 @@ const Index = () => {
   }, [router.query.name]);
   return (
     <div className='relative'>
-      <Navbar />
+      <Navbar color={"black"} bg={"bg-[#FDF9EE]"}/>
       <Products>
         {category !== "" ? <ProductsContainer category={category} /> :"loading..."}
       </Products>
