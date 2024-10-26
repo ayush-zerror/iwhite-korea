@@ -2,7 +2,7 @@ import React from 'react'
 import Products from '@/components/products/Products'
 import Navbar from '@/components/navbar/Navbar'
 
-const Products = () => {
+const Product = () => {
 
   return (
     <div className='relative'>
@@ -13,4 +13,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default Product
