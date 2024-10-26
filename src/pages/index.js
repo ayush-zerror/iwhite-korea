@@ -1,4 +1,5 @@
 import Home from '@/components/home/Home'
+import Section1 from '@/components/home/Section1'
 import Navbar from '@/components/navbar/Navbar'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
@@ -36,6 +37,7 @@ const index = () => {
   return (
     <div className='relative'>
       <Navbar navRef={navRef} color={"white"} />
+      <Section1/>
       <Home homeRef={homeRef} />
     </div>
   )

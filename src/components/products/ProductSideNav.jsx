@@ -16,7 +16,7 @@ const ProductSideNav = () => {
       ]
     
   return (
-    <div className='w-[25%] fixed top-0 left-0 h-screen pl-11 pt-52 '>
+    <div className='hidden sm:block w-[25%] fixed top-0 left-0 h-screen pl-11 pt-52 '>
     {productsList.map((p,i)=>(
       <div key={i} className='relative mb-4'>
       <i className={`ri-arrow-right-line ${router.query.name == p && 'text-zinc-900'} text-zinc-500`}></i>
