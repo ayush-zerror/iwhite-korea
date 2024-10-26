@@ -5,7 +5,7 @@ import Section4 from './Section4'
 import Section1Over from './Section1Over'
 import Footer from '../footer/Footer'
 
-const Home = ({homeRef}) => {
+const Home = () => {
   return (
     <div className='relative pointer-events-none'>
       <Section1Over/>

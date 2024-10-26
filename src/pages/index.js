@@ -9,11 +9,9 @@ gsap.registerPlugin(ScrollTrigger)
 
 const index = () => {
   const navRef = useRef(null)
-  const homeRef = useRef(null)
   useEffect(()=>{
     var tl = gsap.timeline({
       scrollTrigger:{
-        trigger:homeRef.current,
         start:"top 0%",
         end:"top -5%",
         scrub:1
@@ -37,8 +35,8 @@ const index = () => {
   return (
     <div className='relative'>
       <Navbar navRef={navRef} color={"white"} />
-      <Section1/>
-      <Home homeRef={homeRef} />
+      <Section1 title={"Your First In Korean Skincare."} subtitle={"Your First Love."} vid={"./vid.mp4"}/>
+      <Home />
     </div>
   )
 }
