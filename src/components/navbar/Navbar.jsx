@@ -42,7 +42,7 @@ const Navbar = ({ color, bg, navRef }) => {
     <div ref={navRef} className={`fixed top-0 z-10 left-1/2 -translate-x-1/2 w-full font-[second]  py-4  px-3  sm:py-2 sm:px-6 ${bg} flex text-${color} items-center justify-between`}>
       <Link href="/" className='w-[50%] sm:w-[14%]'><img className={`logo w-full ${color == "black" ? 'invert' : ''} filter`} src="https://iwhitekorea.com.ph/wp-content/themes/yootheme/cache/iwhite-logo-transparent-4d1bd242.webp" alt="" /></Link>
       <div className={`absolute left-1/2 -translate-x-1/2  hidden sm:flex items-center gap-10 capitalize  text-lg`}>
-        <Link href='/'>About Us</Link>
+        <Link href='/about-us'>About Us</Link>
         <Link href='/products/daily-skincare-line'>Products</Link>
         <Link href='/'>Contact Us</Link>
       </div>
@@ -60,7 +60,7 @@ const Navbar = ({ color, bg, navRef }) => {
         </div>
         <div className='flex flex-col px-3 text-black'>
           <Link href={"/"} className='text-[12vw] font-[third] font-semibold text-black'>Home</Link>
-          <Link href={"/"} className='text-[12vw] font-[third] font-semibold text-black'>About Us</Link>
+          <Link href={"/about-us"} className='text-[12vw] font-[third] font-semibold text-black'>About Us</Link>
           <Link href={"/products/daily-skincare-line"} className='text-[12vw] font-[third] font-semibold text-black'>Products</Link>
           <div className='capitalize ml-[3vw] font-semibold text-black/50'>
           {productsList.map((p,i)=><Link key={i}  onClick={()=>setisOpen(false)} href={`/products/${p}`} className='flex gap-1' ><i class={`ri-arrow-right-line ${router.query.name == p ? "text-black":'hidden'}`}></i><p className={`${router.query.name == p ? "text-black" : ''}`}>{p}</p></Link>)}
