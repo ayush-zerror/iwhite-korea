@@ -16,6 +16,15 @@
   src: url('/fonts/ClearfaceStd-Regular.woff2');
 }
 
+@font-face {
+  font-family: fourth;
+  src: url('/fonts/font1.woff2');
+}
+
+@font-face {
+  font-family: five;
+  src: url('/fonts/font3.woff2');
+}
 
 * {
   margin: 0;
@@ -35,6 +44,13 @@ body {
 }
 
 .socal-mq{
+  animation-name: slide;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+}
+
+.about-marque h1{
   animation-name: slide;
   animation-iteration-count: infinite;
   animation-timing-function: linear;

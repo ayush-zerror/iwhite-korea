@@ -4,7 +4,7 @@ import React from 'react'
 
 const TextEffect = ({text , to ,id}) => {
     const letters = text.split('')
-    const splitText = letters.map(l=> l == " " ? <span>&nbsp;</span> :<span className='inline-block'>{l}</span>)
+    const splitText = letters.map((l,i) => l == " " ? <span key={i} >&nbsp;</span> :<span key={i} className='inline-block'>{l}</span>)
     const handleMouseEnter = (idx) => {
         const [t1 , t2] = document.querySelector(`.textEff-${idx}`).children
         gsap.to(t1.querySelectorAll('span'),{

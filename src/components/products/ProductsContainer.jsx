@@ -4,7 +4,7 @@ import React, { useContext } from 'react'
 
 const ProductsContainer = ({ category }) => {
   return (
-    <div className='w-full  sm:w-[75%] min-h-screen py-10 pt-32 sm:pt-52 px-3 sm:px-0 sm:pr-11 flex  flex-col  sm:flex-row sm:items-start gap-10 flex-wrap'>
+    <div className='w-full  sm:w-[75%] min-h-screen py-10 pt-32 sm:pt-40 px-3 sm:px-0 sm:pr-11 flex  flex-col  sm:flex-row sm:items-start gap-10 flex-wrap'>
         <Link href='/products/details' className='relative  w-full sm:w-[30%] mb-8 flex flex-col'>
           <img className='h-[85%] w-full object-cover' src="https://www.sohoskin.com/cdn/shop/files/SS_Hydrating_Gel_Cream_01.jpg?v=1724166871&width=750" alt="" />
           <h4 className='text-[4.2vw] sm:text-[1.2vw] font-[second] text-[#030303] mt-[1vw]'>Hydrating Gel-Cream</h4>
