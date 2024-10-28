@@ -3,6 +3,7 @@ import Products from '@/components/products/Products';
 import Navbar from '@/components/navbar/Navbar';
 import ProductsContainer from '@/components/products/ProductsContainer';
 import { useRouter } from 'next/router';
+import Social from '@/components/home/Social';
 import Footer from '@/components/footer/Footer';
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
       <Products>
         {category !== "" ? <ProductsContainer category={category} /> :"loading..."}
       </Products>
+      <Social/>
       <Footer/>
     </div>
   );

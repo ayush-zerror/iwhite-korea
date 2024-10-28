@@ -17,7 +17,7 @@ const ProductSideNav = () => {
       ]
     
   return (
-    <div className='hidden sm:block w-[25%] h-screen pl-11 pt-40 '>
+    <div className='hidden sm:block w-[25%] sticky top-0 left-0 h-screen pl-11 pt-40 '>
       <h2 className='text-[2.2vw] font-[third] mb-4 '>Fitler</h2>
     {productsList.map((p,i)=>(
       <div key={i} className='relative mb-4'>

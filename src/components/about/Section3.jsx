@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
-const Section3 = () => {
+const Section3 = ({setexploreScroll}) => {
+    const secRef =  useRef(null)
+
+    useEffect(()=>{
+        if(secRef.current){
+            setexploreScroll(secRef.current.getBoundingClientRect().top)
+        }
+    },[])
+
     return (
-        <div className='w-full bg-[#FDF9EE] flex justify-between px-3 sm:px-10 py-[10vw] sm:py-[5vw]'>
+        <div ref={secRef} className='w-full bg-[#FDF9EE] flex justify-between px-3 sm:px-10 py-[10vw] sm:py-[5vw]'>
             <div className='hidden sm:block w-[2.5%] relative border-r-2 border-[#E0DDD5]'>
                 <h4 className='absolute rotate-90 top-[9%] left-[-150%] whitespace-nowrap uppercase font-[second]  font-semibold text-[1vw]'>our philosophy</h4>
             </div>
