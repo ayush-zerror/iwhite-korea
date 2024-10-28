@@ -45,7 +45,7 @@ const Footer = () => {
     }
     return (
         <div className='w-full min-h-[70vh] bg-[#FDF9EE] pointer-events-auto'>
-            <div className='w-full sm:h-[70vh] rounded-tl-3xl rounded-tr-3xl sm:bg-[#f0ece2] p-3 sm:p-6'>
+            <div className='w-full sm:h-[70vh] rounded-tl-3xl rounded-tr-3xl flex flex-col justify-between sm:bg-[#f0ece2] p-3 sm:p-6'>
                 <div className='w-full pb-[6vw] bg-[#FDF9EE] rounded-2xl px-[3vw] pt-[9vw] sm:pt-[3vw] flex flex-col sm:flex-row items-center sm:items-start justify-between'>
                     <div>
                         <h2 className='text-[8vw] sm:text-[2.2vw] leading-none text-center sm:text-left'>Your inbox deserves  <br /> rejuvenation, too.</h2>
@@ -92,12 +92,12 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full mt-[10vw] sm:mt-[2vw] flex flex-col sm:flex-row justify-between items-center sm:items-end relative'>
+                <div className='w-full mt-[10vw] sm:mt-0 flex flex-col sm:flex-row justify-between items-center sm:items-end relative'>
                     <div className="social  flex gap-[5vw] sm:gap-[1vw]">
-                        <i className="hover:text-black/50 text-[12vw] sm:text-[2.3vw] duration-300 cursor-pointer ri-facebook-circle-fill"></i>
-                        <i className="hover:text-black/50 text-[12vw] sm:text-[2.3vw] duration-300 cursor-pointer ri-instagram-fill"></i>
-                        <i className="hover:text-black/50 text-[12vw] sm:text-[2.3vw] duration-300 cursor-pointer ri-twitter-fill"></i>
-                        <i className="hover:text-black/50 text-[12vw] sm:text-[2.3vw] duration-300 cursor-pointer ri-youtube-fill"></i>
+                        <i className="hover:text-black/50 text-[12vw] sm:text-[1.7vw] duration-300 cursor-pointer ri-facebook-circle-fill"></i>
+                        <i className="hover:text-black/50 text-[12vw] sm:text-[1.7vw] duration-300 cursor-pointer ri-instagram-fill"></i>
+                        <i className="hover:text-black/50 text-[12vw] sm:text-[1.7vw] duration-300 cursor-pointer ri-twitter-fill"></i>
+                        <i className="hover:text-black/50 text-[12vw] sm:text-[1.7vw] duration-300 cursor-pointer ri-youtube-fill"></i>
                     </div>
                     <Link href="/" className='w-[50%] sm:w-[14%] absolute hidden sm:block left-1/2 -translate-x-1/2'><img className={`logo w-full invert filter`} src="https://iwhitekorea.com.ph/wp-content/themes/yootheme/cache/iwhite-logo-transparent-4d1bd242.webp" alt="" /></Link>
                     <div className='p-3 border border-black rounded-xl w-full sm:w-[25%]'>

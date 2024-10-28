@@ -35,7 +35,7 @@ const index = () => {
   return (
     <div className='relative'>
       <Navbar navRef={navRef} color={"white"} />
-      <Section1 title={"Your First In Korean Skincare."} subtitle={"Your First Love."} vid={"./vid.mp4"}/>
+      <Section1 title={true} vid={"./vid.mp4"}/>
       <Home />
     </div>
   )

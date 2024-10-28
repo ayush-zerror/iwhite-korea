@@ -6,18 +6,19 @@ import { useRouter } from 'next/router'
 const ProductSideNav = () => {
   const router = useRouter()
     const productsList = [
-        "daily-skincare-line",
-        "acne-skincare-line",
-        "power-brightening-line",
-        "pore-care",
-        "skin-booster",
-        "cloud-series",
-        "day-and-bbb-creame"
+        "all products",
+        "daily skincare line",
+        "acne skincare line",
+        "power brightening line",
+        "pore care",
+        "skin booster",
+        "cloud series",
+        "day and bbb creame"
       ]
     
   return (
     <div className='hidden sm:block w-[25%] h-screen pl-11 pt-40 '>
-      <h2 className='text-[2.2vw] font-[third] mb-4 '>All Products</h2>
+      <h2 className='text-[2.2vw] font-[third] mb-4 '>Fitler</h2>
     {productsList.map((p,i)=>(
       <div key={i} className='relative mb-4'>
       <i className={`ri-arrow-right-line ${router.query.name == p && 'text-zinc-900'} text-zinc-500`}></i>

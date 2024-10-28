@@ -11,7 +11,7 @@ const Section2 = () => {
       </div>
       <div className='w-full flex flex-col sm:flex-row justify-between px-3 sm:px-10'>
         <div className='w-full sm:w-[80%]'>
-          <h1 className='text-[4.2vw] sm:text-[3vw] font-[second] sm:font-[fourth] text-[#635758]'><span className='text-black'>About iwhite Korea: </span> 
+          <h1 className='text-[4.2vw] sm:text-[3vw] font-[second] sm:font-[second] text-[#635758]'><span className='text-black'>About iwhite Korea: </span> 
             iWhite Korea is rooted in the concept of Cheot-Sarang, the
             feeling of experiencing your first love.
             </h1>

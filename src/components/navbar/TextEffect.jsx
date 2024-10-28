@@ -10,14 +10,14 @@ const TextEffect = ({text , to ,id}) => {
         gsap.to(t1.querySelectorAll('span'),{
             y:"-110%",
             stagger:{
-                amount:.2
+                amount:.05
             },
             duration:.3
         })
         gsap.to(t2.querySelectorAll('span'),{
             y:"-100%",
             stagger:{
-                amount:.2
+                amount:.05
             },
             duration:.3
         })
@@ -27,14 +27,14 @@ const TextEffect = ({text , to ,id}) => {
         gsap.to(t1.querySelectorAll('span'),{
             y:"-0%",
             stagger:{
-                amount:.2
+                amount:.05
             },
             duration:.3
         })
         gsap.to(t2.querySelectorAll('span'),{
             y:"0%",
             stagger:{
-                amount:.2
+                amount:.05
             },
             duration:.3
         })
