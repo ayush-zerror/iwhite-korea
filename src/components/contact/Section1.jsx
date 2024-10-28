@@ -12,15 +12,15 @@ const Section1 = () => {
                     </h5>
                 </div>
                 <div className='flex flex-col mt-[12vw] sm:mt-0'>
-                    <div className='flex items-center justify-between uppercase font-[second] py-[5vw] sm:py-[1.5vw] border-b border-[#63575849] text-[#635758]'>
+                    <div className='flex items-start justify-between uppercase font-[second] py-[5vw] sm:py-[1.5vw] border-b border-[#63575849] text-[#635758]'>
                         <h4>HOTLINE</h4>
                         <h5 className='text-right'>+632 8741 6469</h5>
                     </div>
-                    <div className='flex items-center justify-between uppercase font-[second] py-[5vw] sm:py-[1.5vw] border-b border-[#63575849] text-[#635758]'>
+                    <div className='flex items-start justify-between uppercase font-[second] py-[5vw] sm:py-[1.5vw] border-b border-[#63575849] text-[#635758]'>
                         <h4>OPPORTUNITIES</h4>
                         <h5 className='text-right'>biocostech@gmail.com</h5>
                     </div>
-                    <div className='flex items-center justify-between uppercase font-[second] py-[5vw] sm:py-[1.5vw] border-b border-[#63575849] text-[#635758]'>
+                    <div className='flex items-start justify-between uppercase font-[second] py-[5vw] sm:py-[1.5vw] border-b border-[#63575849] text-[#635758]'>
                         <h4>PARTNERSHIPS</h4>
                         <h5 className='text-right'>business.biocostech
                             @gmail.com</h5>
@@ -31,7 +31,7 @@ const Section1 = () => {
                 <h1 className='text-[10vw] sm:text-[6.5vw] font-[third] leading-none'>Let's <br />
                     TAlk!</h1>
                 <p className='text-[4.2vw] sm:text-[1.2vw] font-[second] text-[#635758] mt-4 sm:mt-0'>Get in touch with us! Complete the form below to discuss your project. We can't wait to collaborate and bring your vision to life.</p>
-                <form className='mt-[8vw] font-[fourth]'>
+                <form className='mt-[8vw] font-[second]'>
                     <input className='w-full py-3 px-3 border bg-transparent border-[#63575849] mb-3 outline-none' type="text" placeholder='Name' />
                     <input className='w-full py-3 px-3 border bg-transparent border-[#63575849] mb-3 outline-none' type="email" placeholder='Email' />
                     <input className='w-full py-3 px-3 border bg-transparent border-[#63575849] mb-3 outline-none' type="text" placeholder='Contact Number' />
