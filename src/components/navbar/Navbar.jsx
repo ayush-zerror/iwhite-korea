@@ -79,16 +79,16 @@ const Navbar = ({ color, bg, navRef }) => {
           <Link href={"/"} className='mtxt inline-block text-[14vw] font-[third] font-semibold text-black'>Home</Link>
           </div>
           <div className='overflow-hidden'>
-          <Link href={"/about-us"} className='mtxt inline-block text-[14vw] font-[third] font-semibold text-black'>About Us</Link>
+          <Link href={"/about"} className='mtxt inline-block text-[14vw] font-[third] font-semibold text-black'>About</Link>
           </div>
           <div className='overflow-hidden'>
-          <Link href={"/products/daily-skincare-line"} className='mtxt inline-block text-[14vw] font-[third] font-semibold text-black'>Products</Link>
+          <Link href={"/products/all products"} className='mtxt inline-block text-[14vw] font-[third] font-semibold text-black'>Products</Link>
           </div>
           <div className='capitalize ml-[3vw] font-semibold text-black/50'>
           {productsList.map((p,i)=><Link key={i}  onClick={()=>setisOpen(false)} href={`/products/${p}`} className='cat flex gap-1' ><i className={`ri-arrow-right-line ${router.query.name == p ? "text-black":'hidden'}`}></i><p className={`${router.query.name == p ? "text-black" : ''}`}>{p}</p></Link>)}
           </div>
           <div className='overflow-hidden'>
-          <Link href={"/"} className='mtxtc inline-block text-[14vw] font-[third] font-semibold text-black'>Contact Us</Link>
+          <Link href={"/contact"} className='mtxtc inline-block text-[14vw] font-[third] font-semibold text-black'>Contact</Link>
           </div>
         </div>
         <div className='border-t w-full border-black'>
