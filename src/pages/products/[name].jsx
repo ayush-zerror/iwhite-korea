@@ -14,6 +14,7 @@ const Index = () => {
     if (router.query.name) {
       const productCategory = router.query.name.split("-").join("");
       setCategory(productCategory);
+      document.title = `${productCategory.replace(/^\w/, (char) => char.toUpperCase())} - The Original Korean Skin Care - Your Daily Skin Care Partner`
     }
   }, [router.query.name]);
   return (

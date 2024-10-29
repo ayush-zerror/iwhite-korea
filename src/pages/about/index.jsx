@@ -10,9 +10,9 @@ gsap.registerPlugin(ScrollTrigger)
 
 const index = () => {
   const navRef = useRef(null)
-  const vid = "https://iwhitekorea.com.ph/wp-content/uploads/2021/10/Brand-Video_Logo-Seoul_Fold-9.mp4"
 
   useEffect(()=>{
+    document.title = 'About - The Original Korean Skin Care - Your Daily Skin Care Partner'
     var tl = gsap.timeline({
       scrollTrigger:{
         start:"top 0%",
@@ -38,7 +38,7 @@ const index = () => {
   return (
     <div className='relative'>
       <Navbar navRef={navRef} color={"white"} />
-      <Section1 title={false} vid={vid}/>
+      <Section1 title={false} vid={"/videos/about.mp4"}/>
       <About />
     </div>
   )

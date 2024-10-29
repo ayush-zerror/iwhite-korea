@@ -13,7 +13,7 @@ const Section1 = ({ title, vid }) => {
   }, [])
   return (
     <div className='fixed top-0 left-0 w-full h-screen flex'>
-      <video autoPlay muted loop className='w-full  h-full object-cover' src={vid}></video>
+      <video autoPlay muted loop playsInline className='w-full  h-full object-cover' src={vid}></video>
       <div className='w-full h-full absolute top-0 left-0 bg-gradient-to-b from-[#0000000c] to-[#000000c2]  text-white flex flex-col items-center justify-end pb-[30vw] sm:pb-[6vw]'>
         {
           title && (<>
