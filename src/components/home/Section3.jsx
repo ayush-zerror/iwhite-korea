@@ -12,7 +12,7 @@ export default function Section3() {
     const products = useContext(productsContext)
     const filterProducts = products.slice(0, 7)
     return (
-        <div className='w-full h-[50vh] sm:h-[110vh] pt-[10vw] pb-[4vw] px-3 sm:px-5 bg-[#FDF9EE] pointer-events-auto'>
+        <div className='w-full  pt-[10vw] pb-[4vw] px-3 sm:px-5 bg-[#FDF9EE] pointer-events-auto'>
             <Swiper
                 spaceBetween={15}
                 freeMode={true}
@@ -30,7 +30,7 @@ export default function Section3() {
                 {filterProducts.map((p,i)=>(
                     <SwiperSlide key={i}>
                     <Link href={`/products/${p.category}/${p.name}`}>
-                    <img className='h-[85%] w-full object-cover' src={p.images[0]} alt="" />
+                    <img className='h-[45vh] sm:h-[70vh] w-full object-cover' src={p.images[0]} alt="" />
                     <h4 className='text-[4.2vw] sm:text-[1.2vw] font-[second] text-[#030303] mt-[1vw]'>{p.name}</h4>
                     <div className='flex items-center gap-1  text-[4.2vw] sm:text-[1.2vw] font-semibold text-black'>
                         <i className="ri-star-s-fill"></i><i className="ri-star-s-fill"></i><i className="ri-star-s-fill"></i><i className="ri-star-s-fill"></i><i className="ri-star-s-fill"></i>
