@@ -53,7 +53,7 @@ return (
     </div>
     <div className='w-full bg-[#FDF9EE] sm:hidden flex flex-col items-start'>
       <div className='w-full h-[60vh]'>
-        <img className='w-full h-full object-cover object-top' src="https://framerusercontent.com/images/LQk9vqb9asTFI79KVznb5OUhIE.webp?scale-down-to=1024" alt="" />
+        <img className='w-full h-full object-cover object-top' src="/about4.jpg" alt="" />
       </div>
         <div className='w-full py-[10vw] pt-2'>
           <div className='w-full flex flex-col pt-[12vw] sm:pt-[8vw] px-3 sm:px-[6vw]'>

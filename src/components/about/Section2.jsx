@@ -20,7 +20,7 @@ const Section2 = ({exploreScroll}) => {
         <h1 className='text-[17vw] sm:text-[12vw] py-4 sm:py-0 font-[fourth] w-fit inline-block px-[4vw] sm:px-[2vw] uppercase'><span className='text-black/50'>ABOUT</span> iWhiteKOREA</h1>
         <h1 className='text-[17vw] sm:text-[12vw] py-4 sm:py-0 font-[fourth] w-fit inline-block px-[4vw] sm:px-[2vw] uppercase'><span className='text-black/50'>ABOUT</span> iWhiteKOREA</h1>
       </div>
-      <div className='w-full flex flex-col sm:flex-row justify-between px-3 sm:px-10'>
+      <div className='w-full flex flex-col bg-[#FDF9EE] sm:flex-row justify-between px-3 sm:px-10'>
         <div className='w-full sm:w-[80%]'>
           <h1 className='text-[4.2vw] sm:text-[3vw] font-[second] sm:font-[second] text-[#635758]'><span className='text-black'>About iwhite Korea: </span> 
             iWhite Korea is rooted in the concept of Cheot-Sarang, the
@@ -36,7 +36,7 @@ const Section2 = ({exploreScroll}) => {
           </div>
         </div>
       </div>
-      <div className='w-full h-[65vh] sm:h-[70vh] flex mt-[5vw] bg-[#FDF9EE] '>
+      <div className='w-full h-[65vh] sm:h-[70vh] flex mt-[5vw] bg-[#FDF9EE]'>
         <img className='w-full sm:w-[calc(100%/3)] h-full object-cover' src="/about1.jpg" alt="" />
         <img className='hidden sm:block w-[calc(100%/3)] h-full object-cover' src="/about2.jpg" alt="" />
         <img className='hidden sm:block w-[calc(100%/3)] h-full object-cover' src="/about3.jpg" alt="" />

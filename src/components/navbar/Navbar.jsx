@@ -57,7 +57,7 @@ const Navbar = ({ color, bg, navRef }) => {
 
   return (
     <div ref={navRef} className={`fixed top-0 z-10 left-1/2 -translate-x-1/2 w-full font-[second]  py-4  px-3  sm:py-4 sm:px-6 ${bg} flex text-${color} items-center justify-between`}>
-      <Link href="/" className=''><img className={`logo w-[5vw] sm:w-[10vw]`} src="/logo.png" alt="" /></Link>
+      <Link href="/" className=''><img className={`logo w-[30vw] sm:w-[10vw]`} src="/logo.png" alt="" /></Link>
       <div className={`absolute left-1/2 -translate-x-1/2  hidden sm:flex items-center gap-10 text-lg`}>
       <TextEffect key={2} text={"Shop"} to={"/products/all products"} id={2}/>
       <TextEffect key={1} text={"About"} to={"/about"} id={1}/>
