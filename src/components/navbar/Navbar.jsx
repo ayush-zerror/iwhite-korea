@@ -9,13 +9,13 @@ const Navbar = ({ color, bg, navRef }) => {
   const [isOpen, setisOpen] = useState(false)
   const router = useRouter()
   const productsList = [
-    "daily-skincare-line",
-    "acne-skincare-line",
-    "power-brightening-line",
-    "pore-care",
-    "skin-booster",
-    "cloud-series",
-    "day-and-bbb-creame"
+    "daily skincare line",
+    "acne skincare line",
+    "power brightening line",
+    "pore care",
+    "skin booster",
+    "cloud series",
+    "day and bbb creame"
   ]
   useEffect(()=>{
     if(navigation.current){
@@ -56,8 +56,8 @@ const Navbar = ({ color, bg, navRef }) => {
  
 
   return (
-    <div ref={navRef} className={`fixed top-0 z-10 left-1/2 -translate-x-1/2 w-full font-[second]  py-4  px-3  sm:py-2 sm:px-6 ${bg} flex text-${color} items-center justify-between`}>
-      <Link href="/" className='w-[50%] sm:w-[14%]'><img className={`logo w-full ${color == "black" ? 'invert' : ''} filter`} src="https://iwhitekorea.com.ph/wp-content/themes/yootheme/cache/iwhite-logo-transparent-4d1bd242.webp" alt="" /></Link>
+    <div ref={navRef} className={`fixed top-0 z-10 left-1/2 -translate-x-1/2 w-full font-[second]  py-4  px-3  sm:py-4 sm:px-6 ${bg} flex text-${color} items-center justify-between`}>
+      <Link href="/" className=''><img className={`logo w-[5vw] sm:w-[10vw]`} src="/logo.png" alt="" /></Link>
       <div className={`absolute left-1/2 -translate-x-1/2  hidden sm:flex items-center gap-10 text-lg`}>
       <TextEffect key={2} text={"Shop"} to={"/products/all products"} id={2}/>
       <TextEffect key={1} text={"About"} to={"/about"} id={1}/>

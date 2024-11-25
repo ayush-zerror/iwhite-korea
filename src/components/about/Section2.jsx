@@ -36,10 +36,10 @@ const Section2 = ({exploreScroll}) => {
           </div>
         </div>
       </div>
-      <div className='w-full h-[65vh] sm:h-[70vh] flex mt-[5vw]'>
-        <img className='w-full sm:w-[calc(100%/3)] h-full object-cover' src="https://framerusercontent.com/images/mrMYZ6v6P76zyaAFLruqtYRSFs.webp?scale-down-to=512" alt="" />
-        <img className='hidden sm:block w-[calc(100%/3)] h-full object-cover' src="https://framerusercontent.com/images/21qMiYf2FW9nVVf0ZXWy7lsKvo.webp?scale-down-to=512" alt="" />
-        <img className='hidden sm:block w-[calc(100%/3)] h-full object-cover' src="https://framerusercontent.com/images/kuzAFRgtBYB5PgqonomJBKMMwo.webp?scale-down-to=512" alt="" />
+      <div className='w-full h-[65vh] sm:h-[70vh] flex mt-[5vw] bg-[#FDF9EE] '>
+        <img className='w-full sm:w-[calc(100%/3)] h-full object-cover' src="/about1.jpg" alt="" />
+        <img className='hidden sm:block w-[calc(100%/3)] h-full object-cover' src="/about2.jpg" alt="" />
+        <img className='hidden sm:block w-[calc(100%/3)] h-full object-cover' src="/about3.jpg" alt="" />
       </div>
     </div>
   )

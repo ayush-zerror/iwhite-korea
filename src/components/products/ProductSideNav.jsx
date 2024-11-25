@@ -21,8 +21,8 @@ const ProductSideNav = () => {
       <h2 className='text-[2.2vw] font-[third] mb-4 '>Fitler</h2>
     {productsList.map((p,i)=>(
       <div key={i} className='relative mb-4'>
-      <i className={`ri-arrow-right-line ${router.query.name == p && 'text-zinc-900'} text-zinc-500`}></i>
-      <Link href={`/products/${p}`} className={`absolute top-1/2 -translate-y-1/2 left-0 bg-[#FDF9EE] hover:left-5 ${router.query.name == p && 'left-5 text-zinc-900'} duration-500 text-zinc-500 font-[second] capitalize  text-2xl cursor-pointer w-fit`}>{p}</Link>
+      <i className={`ri-arrow-right-line ${router.query.category == p && 'text-zinc-900'} text-zinc-500`}></i>
+      <Link href={`/products/${p}`} className={`absolute top-1/2 -translate-y-1/2 left-0 bg-[#FDF9EE] hover:left-5 ${router.query.category == p && 'left-5 text-zinc-900'} duration-500 text-zinc-500 font-[second] capitalize  text-2xl cursor-pointer w-fit`}>{p}</Link>
       </div>
     ))}
    </div>

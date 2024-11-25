@@ -23,7 +23,7 @@ return (
    <>
     <div className='hidden core w-full h-[100vh] bg-[#FDF9EE] sm:flex items-start'>
       <div className='w-[60%] h-screen'>
-        <img className='w-full h-full object-cover object-top' src="https://framerusercontent.com/images/LQk9vqb9asTFI79KVznb5OUhIE.webp?scale-down-to=1024" alt="" />
+        <img className='w-full h-full object-cover object-top' src="/about4.jpg" alt="" />
       </div>
       <div className='w-[40%] h-screen overflow-hidden'>
         <div className='core-values w-full'>

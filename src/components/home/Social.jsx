@@ -2,6 +2,13 @@ import Link from 'next/link'
 import React from 'react'
 
 const Section4 = () => {
+    const posts = [
+        "/insta1.jpg",
+        "/insta2.jpg",
+        "/insta3.jpg",
+        "/insta4.jpg",
+        "/insta5.jpg",
+    ]
     return (
         <div className='w-full  pt-[15vw] sm:pt-[5vw] bg-[#FDF9EE] pointer-events-auto'>
             <div className='w-full  flex items-center justify-between px-3 sm:px-6 '>
@@ -13,44 +20,18 @@ const Section4 = () => {
             </div>
             <div className='w-full py-[8vw] sm:py-[5vw] overflow-hidden flex'>
                 <div className='socal-mq w-fit flex items-center gap-4 pr-4'>
-                    <div className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/post1.jpg" alt="" />
-                    </div>
-                    <div className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/post2.jpg" alt="" />
-                    </div>
-                    <div className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/post3.jpg" alt="" />
-                    </div>
-                    <div className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/post4.jpg" alt="" />
-                    </div>
-                    <div className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/post2.jpg" alt="" />
-                    </div>
-                    <div className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/post5.jpg" alt="" />
-                    </div>
+                    {posts.map((p, i) => (
+                        <div key={i} className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
+                            <img className='w-full h-full object-cover' src={p} alt="" />
+                        </div>
+                    ))}
                 </div>
                 <div className='socal-mq w-fit flex items-center gap-4 pr-4'>
-                    <div className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/post1.jpg" alt="" />
-                    </div>
-                    <div className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/post2.jpg" alt="" />
-                    </div>
-                    <div className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/post3.jpg" alt="" />
-                    </div>
-                    <div className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/post4.jpg" alt="" />
-                    </div>
-                    <div className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/post2.jpg" alt="" />
-                    </div>
-                    <div className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/post5.jpg" alt="" />
-                    </div>
+                    {posts.map((p, i) => (
+                        <div key={i} className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
+                            <img className='w-full h-full object-cover' src={p} alt="" />
+                        </div>
+                    ))}
                 </div>
 
             </div>
