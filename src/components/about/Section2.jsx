@@ -1,5 +1,6 @@
 import gsap from 'gsap'
 import ScrollToPlugin from 'gsap/dist/ScrollToPlugin'
+import Image from 'next/image'
 import React from 'react'
 gsap.registerPlugin(ScrollToPlugin)
 
@@ -37,9 +38,9 @@ const Section2 = ({exploreScroll}) => {
         </div>
       </div>
       <div className='w-full h-[65vh] sm:h-[70vh] flex mt-[5vw] bg-[#FDF9EE]'>
-        <img className='w-full sm:w-[calc(100%/3)] h-full object-cover' src="/about1.jpg" alt="" />
-        <img className='hidden sm:block w-[calc(100%/3)] h-full object-cover' src="/about2.jpg" alt="" />
-        <img className='hidden sm:block w-[calc(100%/3)] h-full object-cover' src="/about3.jpg" alt="" />
+        <Image width={1000} height={1000} className='w-full sm:w-[calc(100%/3)] h-full object-cover' src="/about1.jpg" alt="" />
+        <Image width={1000} height={1000} className='hidden sm:block w-[calc(100%/3)] h-full object-cover' src="/about2.jpg" alt="" />
+        <Image width={1000} height={1000} className='hidden sm:block w-[calc(100%/3)] h-full object-cover' src="/about3.jpg" alt="" />
       </div>
     </div>
   )

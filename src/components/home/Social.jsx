@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -22,14 +23,14 @@ const Section4 = () => {
                 <div className='socal-mq w-fit flex items-center gap-4 pr-4'>
                     {posts.map((p, i) => (
                         <div key={i} className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                            <img className='w-full h-full object-cover' src={p} alt="" />
+                            <Image width={1000} height={1000} className='w-full h-full object-cover' src={p} alt="" />
                         </div>
                     ))}
                 </div>
                 <div className='socal-mq w-fit flex items-center gap-4 pr-4'>
                     {posts.map((p, i) => (
                         <div key={i} className='w-[40vw] sm:w-[18vw] h-[40vw] sm:h-[18vw] shrink-0 rounded-xl overflow-hidden'>
-                            <img className='w-full h-full object-cover' src={p} alt="" />
+                            <Image width={1000} height={1000} className='w-full h-full object-cover' src={p} alt="" />
                         </div>
                     ))}
                 </div>

@@ -53,7 +53,7 @@ const details = ({ product }) => {
 
                     {product.images.map((img, i) => (
                         <div className='w-[12vw] sm:w-[5vw] h-[12vw] sm:h-[5vw] bg-white p-[.5vw] sm:p-1 flex cursor-pointer items-center justify-center'>
-                            <img className='w-full h-full object-cover' src={img} alt="" />
+                            <Image width={1000} height={1000} className='w-full h-full object-cover' src={img} alt="" />
                         </div>
                     ))}
                 </div>

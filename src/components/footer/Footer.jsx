@@ -1,4 +1,5 @@
 import gsap from 'gsap'
+import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useRef, useState } from 'react'
 
@@ -99,7 +100,7 @@ const Footer = () => {
                         <i className="hover:text-black/50 text-[12vw] sm:text-[1.7vw] duration-300 cursor-pointer ri-twitter-fill"></i>
                         <i className="hover:text-black/50 text-[12vw] sm:text-[1.7vw] duration-300 cursor-pointer ri-youtube-fill"></i>
                     </div>
-                    <Link href="/" className='absolute hidden sm:block left-1/2 -translate-x-1/2 w-[5vw] sm:w-[10vw]'><img className={`logo invert filter w-full`} src="/logo.png" alt="" /></Link>
+                    <Link href="/" className='absolute hidden sm:block left-1/2 -translate-x-1/2 w-[5vw] sm:w-[10vw]'><Image width={1000} height={1000} className={`logo invert filter w-full`} src="/logo.png" alt="" /></Link>
                     <div className='p-3 border border-black rounded-xl w-full sm:w-[25%]'>
                         <p className='text-[3vw] sm:text-[.8vw]'>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
                     </div>

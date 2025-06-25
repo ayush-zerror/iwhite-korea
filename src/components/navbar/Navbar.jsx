@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useRef, useState } from 'react'
 import TextEffect from './TextEffect'
+import Image from 'next/image'
 
 const Navbar = ({ color, bg, navRef }) => {
   const navigation = useRef()
@@ -57,7 +58,7 @@ const Navbar = ({ color, bg, navRef }) => {
 
   return (
     <div ref={navRef} className={`fixed top-0 z-10 left-1/2 -translate-x-1/2 w-full font-[second]  py-4  px-3  sm:py-4 sm:px-6 ${bg} flex text-${color} items-center justify-between`}>
-      <Link href="/" className=''><img className={`logo w-[30vw] sm:w-[10vw]`} src="/logo.png" alt="" /></Link>
+      <Link href="/" className=''><Image width={1000} height={1000} className={`logo w-[30vw] sm:w-[10vw]`} src="/logo.png" alt="" /></Link>
       <div className={`absolute left-1/2 -translate-x-1/2  hidden sm:flex items-center gap-10 text-lg`}>
       <TextEffect key={2} text={"Shop"} to={"/products/all products"} id={2}/>
       <TextEffect key={1} text={"About"} to={"/about"} id={1}/>
@@ -92,7 +93,7 @@ const Navbar = ({ color, bg, navRef }) => {
           </div>
         </div>
         <div className='border-t w-full border-black'>
-          <Link href="/" ><img className={`logo w-[50%] filter invert`} src="https://iwhitekorea.com.ph/wp-content/themes/yootheme/cache/iwhite-logo-transparent-4d1bd242.webp" alt="" /></Link>
+          <Link href="/" ><Image width={1000} height={1000} className={`logo w-[50%] filter invert`} src="https://iwhitekorea.com.ph/wp-content/themes/yootheme/cache/iwhite-logo-transparent-4d1bd242.webp" alt="" /></Link>
         </div>
       </div>
     }

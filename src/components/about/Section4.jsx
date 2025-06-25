@@ -1,6 +1,7 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import Image from 'next/image'
 import React from 'react'
 gsap.registerPlugin(ScrollTrigger)
 
@@ -23,7 +24,7 @@ return (
    <>
     <div className='hidden core w-full h-[100vh] bg-[#FDF9EE] sm:flex items-start'>
       <div className='w-[60%] h-screen'>
-        <img className='w-full h-full object-cover object-top' src="/about4.jpg" alt="" />
+        <Image width={1000} height={1000} className='w-full h-full object-cover object-top' src="/about4.jpg" alt="" />
       </div>
       <div className='w-[40%] h-screen overflow-hidden'>
         <div className='core-values w-full'>
@@ -53,7 +54,7 @@ return (
     </div>
     <div className='w-full bg-[#FDF9EE] sm:hidden flex flex-col items-start'>
       <div className='w-full h-[60vh]'>
-        <img className='w-full h-full object-cover object-top' src="/about4.jpg" alt="" />
+        <Image width={1000} height={1000} className='w-full h-full object-cover object-top' src="/about4.jpg" alt="" />
       </div>
         <div className='w-full py-[10vw] pt-2'>
           <div className='w-full flex flex-col pt-[12vw] sm:pt-[8vw] px-3 sm:px-[6vw]'>
